@@ -1,9 +1,11 @@
 import React from 'react';
+//import pages
+import Aboutus from './pages/aboutus';
 
 function App() {
   return (
     <div className="App">
-      <h1>Shot</h1>
+      <Aboutus />
     </div>
   );
 }
