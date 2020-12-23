@@ -7,28 +7,19 @@ import styled from 'styled-components';
 import{About, Description, Image, Hide} from '../styles';
 
 const Aboutsection = () =>{
-    const Titleanim = {
-        hidden:{opacity:0},
-        show: {opacity:1, transition :{duration:2}},
-    };
-    const Container ={
-        hidden: {x:100},
-    show:{x:0, transition:{duration:1 , ease: "easeOut", staggerChildren:1, */*when:"beforChildren"*/}},
-    }
-    
-    
+    // check out the framer motion page
     return(
         <About>
             <Description>
-                <motion.div variants={Container} initial="hidden" animate="show" className="title">
+                <motion.div className="title">
                     <Hide>
-                        <motion.h2 variants={Titleanim} >We work to make</motion.h2>
+                        <motion.h2 >We work to make</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={Titleanim}>your <span>dreams</span> come </motion.h2>
+                        <motion.h2 >your <span>dreams</span> come </motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={Titleanim}>true.</motion.h2>
+                        <motion.h2 >true.</motion.h2>
                     </Hide>
                 </motion.div>
                 <p>Contact us for any photography or videography ideas that you have. We have professionals
