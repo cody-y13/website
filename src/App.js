@@ -6,6 +6,7 @@ import Aboutus from './pages/aboutus';
 import Nav from './components/nav';
 import Contactus from './pages/contactus';
 import Ourwork from './pages/ourwork';
+import Moviedetail from './pages/moviedetail';
 //router
 import {Switch, Route} from 'react-router-dom';
 
@@ -18,8 +19,11 @@ function App() {
         <Route path="/" exact>
           <Aboutus />
         </Route>
-        <Route path="/work">
+        <Route path="/work" exact>
           <Ourwork />
+        </Route>
+        <Route path="/work/:id">
+          <Moviedetail/>
         </Route>
         <Route path="/contact">
           <Contactus />
