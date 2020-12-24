@@ -6,6 +6,8 @@ import {motion} from 'framer-motion';
 import styled from 'styled-components';
 import{About, Description, Image, Hide} from '../styles';
 import {Titleanim, Fade, Photoanim} from '../animation';
+//waves
+import Wave from './wave';
 
 const Aboutsection = () =>{
     // check out the framer motion page
@@ -30,6 +32,7 @@ const Aboutsection = () =>{
             <Image>
                 <motion.img  variants={Photoanim} src= {home1} alt='Guy with a camera' />
             </Image>
+            <Wave />
         </About>
     );
 };
