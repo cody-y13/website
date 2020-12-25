@@ -2,46 +2,39 @@ import React from 'react';
 import Toggle from './toggle';
 //style
 import styled from 'styled-components';
-import{About, Description, Image, Hide} from '../styles';
+import{About} from '../styles';
+import {AnimateSharedLayout} from 'framer-motion';
 
 const Faqsection = () =>{
     return(
         <Faq>
             <h2>Any Questions <span>FAQ</span></h2>
-            <Toggle>
-            <div className="question">
-                <h4>How do I start?</h4>
+            <AnimateSharedLayout>
+            <Toggle title="How do I start?">
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
             </Toggle>
-            <div className="question">
-                <h4>Daily schedule</h4>
+            <Toggle title="Daily schedule">
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Payment methods</h4>
+            </Toggle>
+            <Toggle title="Payment methods">
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>prodcuts and services?</h4>
+            </Toggle>
+            <Toggle title="prodcuts and services?">
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toggle>
+            </AnimateSharedLayout>
         </Faq>
     );
 };
